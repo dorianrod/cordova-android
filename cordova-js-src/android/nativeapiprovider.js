@@ -21,7 +21,7 @@
  * Exports the ExposedJsApi.java object if available, otherwise exports the PromptBasedNativeApi.
  */
 
-var nativeApi = this._cordovaNative || require('cordova/android/promptbasednativeapi');
+var nativeApi = window._cordovaNative || require('cordova/android/promptbasednativeapi');
 var currentApi = nativeApi;
 
 module.exports = {
